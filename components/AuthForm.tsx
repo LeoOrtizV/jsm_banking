@@ -29,6 +29,7 @@ const AuthForm =  ({ type }: { type: string }) => {
     const router = useRouter();
     const [user, setUser] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
+  
 
     const formSchema = authFormSchema(type)
 
@@ -107,7 +108,7 @@ const AuthForm =  ({ type }: { type: string }) => {
         </header>
         {user ? (
             <div className="flex flex-col gap-4">
-                Plaidlink
+                
             </div>
         ):(
             <>
